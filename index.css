@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+.copy{
+    display:inline;
+    
+}
+.copyright{
+   display:inline;
+    background-color: red;
+    margin:0;
+    padding:0;
+    
+    
+}
+
+.box1{
+   
+    border-radius: 50px;
+    width= 50px;
+    height= 50px;
+    background-color: black;
+}
