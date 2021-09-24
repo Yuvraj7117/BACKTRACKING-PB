@@ -10,8 +10,8 @@
 
 </head>
 <body>
-  <h1>Backtracking</h1>
-  Copyright &#169;2002 by David Matuszek
+  <h1 class=heading>Backtracking</h1>
+    <p class="copyright">Copyright &#169;2002 by David Matuszek</p>
     <p>Backtracking is a form of recursion.</p>
     <p>The usual scenario is that you are faced with a number of options, and you must choose one of these. After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.</p>
     <p>Conceptually, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
@@ -268,7 +268,7 @@ And here's the code for method 2:
 }</font></pre>
 Those appear pretty similar, and you might think they are equally good. However, the timing information suggests otherwise<br>
 
-<table border=1 align=center>
+<table border="1" align="center">
 <tr bgcolor=gray>
 <td bgcolor=white></td>
 <td>2 by 3 map</td>
@@ -403,7 +403,17 @@ static boolean no(BinaryTree node) {
 
 
 
-<div class="box1"></div>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=black-ball.jpg></td>
+            <td class=gap>       </td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
 
 
 
@@ -417,6 +427,19 @@ I
 
 <P>The goal is to reverse the positions of the marbles:</P>
 
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=black-ball.jpg></td>
+            <td class=gap>      </td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+
 		 		
 <P>The black marbles can only move to the right, and the white marbles can only move to the left (no backing up). At each move, a marble can either:</P>
 
@@ -425,6 +448,84 @@ I
 <li>Jump ahead over exactly one marble of the opposite color, if the space just beyond that marble is clear.</li></UL>
 
 For example, you could make the following sequence of moves:
+
+<b>Starting position:</b>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=black-ball.jpg></td>
+            <td class=gap >      </td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>   
+</table>
+
+<b>Black moves ahead:</b>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td class=gap >      </td>
+            <td><img src=black-ball.jpg>       </td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+<b>White jumps:</b>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=black-ball.jpg>       </td>
+            <td class=gap></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+<b>Black moves ahead:</b>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+            <td class=gap>     </td>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+<B>Black jumps:</B>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td class=gap><img src=></td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=black-ball.jpg>       </td>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+<span align= center>White moves ahead:</span>
+<table class=tb2 border="1cm"   align="center">
+    <tr>
+            <td class=gap><img src=></td>
+            <td><img src=white-ball.jpg></td>
+            <td><img src=black-ball.jpg>       </td>
+            <td><img src=black-ball.jpg></td>
+            <td><img src=white-ball.jpg></td>
+    </tr>
+    
+    
+</table>
+
+<b>Stuck!</b>
 
 
 
