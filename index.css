@@ -1,24 +1,27 @@
-body{
-    margin: 0;
-}
 
-.copy{
-    display:inline;
-    
+
+.heading{
+line-height: 0px;
+
 }
 .copyright{
-   display:inline;
-    background-color: red;
-    margin:0;
-    padding:0;
-    
+   margin-top:0px;
+  
+   
     
 }
 
-.box1{
-   
-    border-radius: 50px;
-    width= 50px;
-    height= 50px;
-    background-color: black;
+
+
+.tb2{
+
+    border:2px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+.gap{
+width:45px;
+height:45px;
+
 }
